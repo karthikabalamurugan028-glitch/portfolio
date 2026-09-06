@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Karthika Balamurugan | Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com/">
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+<link href="./Karthika Balamurugan _ Portfolio_files/css2" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+    background:
+    radial-gradient(circle at 10% 20%,#6a00ff55,transparent 30%),
+    radial-gradient(circle at 90% 10%,#00eaff44,transparent 30%),
+    radial-gradient(circle at 50% 90%,#ff00cc33,transparent 30%),
+    #050014;
+    overflow-x:hidden;
+}
+
+/* NAVBAR */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    background:rgba(5,0,20,.75);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:800;
+
+    background:linear-gradient(90deg,#00ffff,#ff4fd8);
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00ffff;
+}
+
+/* HOME */
+
+.hero{
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:130px 8% 70px;
+}
+
+.hero-content{
+    max-width:850px;
+}
+
+.small-text{
+    color:#00ffff;
+    letter-spacing:4px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.hero h1{
+    font-size:clamp(45px,7vw,80px);
+    line-height:1.1;
+    margin:20px 0;
+}
+
+.hero h1 span{
+    background:linear-gradient(
+        90deg,
+        #00ffff,
+        #8a5cff,
+        #ff4fd8
+    );
+
+    -webkit-background-clip:text;
+    color:transparent;
+}
+
+.hero h2{
+    color:#d5d5d5;
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    color:#bdbdbd;
+    font-size:18px;
+    line-height:1.9;
+}
+
+/* BUTTONS */
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    display:inline-block;
+
+    padding:14px 28px;
+
+    border-radius:30px;
+
+    margin:8px;
+
+    text-decoration:none;
+    font-weight:700;
+
+    color:#050014;
+
+    background:linear-gradient(
+        90deg,
+        #00ffff,
+        #9c7bff
+    );
+
+    transition:.4s;
+}
+
+.btn:hover{
+    transform:translateY(-5px);
+
+    box-shadow:
+    0 0 20px #00ffff,
+    0 0 40px #8a5cff;
+}
+
+.btn-outline{
+    color:white;
+    background:transparent;
+    border:1px solid #ff4fd8;
+}
+
+.btn-outline:hover{
+    box-shadow:0 0 25px #ff4fd8;
+}
+
+/* SECTIONS */
+
+section{
+    padding:100px 8%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.section-title h2{
+    font-size:45px;
+}
+
+.section-title span{
+    color:#00ffff;
+}
+
+.section-title p{
+    color:#aaa;
+    margin-top:10px;
+}
+
+/* CARDS */
+
+.cards{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+}
+
+.card{
+    padding:30px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    backdrop-filter:blur(15px);
+
+    transition:.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+
+    border-color:#00ffff;
+
+    box-shadow:
+    0 10px 35px rgba(0,255,255,.15);
+}
+
+.card-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.card h3{
+    color:#ff62db;
+    margin-bottom:12px;
+    font-size:22px;
+}
+
+.card p{
+    color:#c8c8c8;
+    line-height:1.8;
+}
+
+/* ABOUT */
+
+.about-text{
+    max-width:850px;
+    margin:auto;
+
+    text-align:center;
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:2;
+}
+
+/* EDUCATION */
+
+.timeline{
+    max-width:850px;
+    margin:auto;
+}
+
+.timeline-item{
+    padding:25px;
+
+    margin-bottom:25px;
+
+    border-left:4px solid #00ffff;
+
+    background:rgba(255,255,255,.06);
+
+    border-radius:15px;
+
+    transition:.3s;
+}
+
+.timeline-item:hover{
+    transform:translateX(10px);
+    box-shadow:0 0 25px rgba(0,255,255,.15);
+}
+
+.timeline-item h3{
+    color:#00ffff;
+}
+
+.timeline-item p{
+    color:#ccc;
+}
+
+/* SKILLS */
+
+.skill{
+    margin-bottom:25px;
+}
+
+.skill-header{
+    display:flex;
+    justify-content:space-between;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+}
+
+.progress{
+    height:12px;
+
+    background:#211b36;
+
+    border-radius:20px;
+
+    overflow:hidden;
+}
+
+.progress span{
+    display:block;
+
+    height:100%;
+
+    border-radius:20px;
+
+    background:
+    linear-gradient(
+        90deg,
+        #00ffff,
+        #8a5cff,
+        #ff4fd8
+    );
+}
+
+.python{
+    width:80%;
+}
+
+.c{
+    width:65%;
+}
+
+.cpp{
+    width:70%;
+}
+
+/* CERTIFICATIONS */
+
+.certificate{
+    position:relative;
+    overflow:hidden;
+}
+
+.certificate h3{
+    color:#00ffff;
+}
+
+.provider{
+    color:#ff62db !important;
+    font-weight:700;
+}
+
+/* INTERESTS */
+
+.interest-card{
+    text-align:center;
+}
+
+/* CONTACT */
+
+.contact-container{
+    max-width:900px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
+
+    gap:20px;
+}
+
+.contact-card{
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    transition:.3s;
+}
+
+.contact-card:hover{
+    border-color:#ff4fd8;
+    transform:translateY(-5px);
+}
+
+.contact-card .icon{
+    font-size:35px;
+}
+
+.contact-card h3{
+    margin:10px 0;
+}
+
+.contact-card a{
+    color:#00ffff;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+/* FOOTER */
+
+footer{
+    text-align:center;
+
+    padding:30px;
+
+    color:#aaa;
+
+    background:rgba(0,0,0,.3);
+
+    border-top:1px solid rgba(255,255,255,.1);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+    header{
+        padding:18px 5%;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .hero{
+        padding-top:130px;
+        text-align:center;
+    }
+
+    section{
+        padding-left:6%;
+        padding-right:6%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header>
+
+    <div class="logo">
+        Karthika.
+    </div>
+
+    <nav>
+
+        <a href="http://127.0.0.1:5500/index.html#home">Home</a>
+        <a href="http://127.0.0.1:5500/index.html#about">About</a>
+        <a href="http://127.0.0.1:5500/index.html#education">Education</a>
+        <a href="http://127.0.0.1:5500/index.html#skills">Skills</a>
+        <a href="http://127.0.0.1:5500/index.html#certifications">Certifications</a>
+        <a href="http://127.0.0.1:5500/index.html#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- HOME -->
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="small-text">
+            WELCOME TO MY PORTFOLIO
+        </div>
+
+        <h1>
+            Hi, I'm
+            <span>Karthika Balamurugan</span>
+        </h1>
+
+        <h2>
+            B.Sc. Computer Science with Data Analytics
+        </h2>
+
+        <p>
+            A passionate computer science student interested
+            in programming, data analytics, technology and
+            problem solving. I love learning new technologies
+            and continuously improving my skills.
+        </p>
+
+        <div class="buttons">
+
+            <a href="http://127.0.0.1:5500/index.html#certifications" class="btn">
+                ✨ My Certifications
+            </a>
+
+            <a href="http://127.0.0.1:5500/index.html#contact" class="btn btn-outline">
+                📩 Contact Me
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+    <div class="section-title">
+
+        <h2>
+            About <span>Me</span>
+        </h2>
+
+        <p>Get to know me</p>
+
+    </div>
+
+    <div class="about-text">
+
+        <p>
+            Hello! I'm Karthika Balamurugan, a B.Sc.
+            Computer Science with Data Analytics student.
+            I am passionate about programming and enjoy
+            debugging errors and learning new technologies.
+        </p>
+
+        <br>
+
+        <p>
+            I am continuously working on improving my
+            technical knowledge, communication skills and
+            problem-solving abilities.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+    <div class="section-title">
+
+        <h2>
+            My <span>Education</span>
+        </h2>
+
+        <p>My academic journey</p>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <h3>
+                🎓 B.Sc. Computer Science with Data Analytics
+            </h3>
+
+            <p>KPRCAS</p>
+
+            <p>Batch: 2026 - 2029</p>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <h3>
+                🏫 Higher Secondary Education
+            </h3>
+
+            <p>
+                Venkitaraj Matriculation Higher Secondary School,
+                Sulthanpet
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+    <div class="section-title">
+
+        <h2>
+            My <span>Skills</span>
+        </h2>
+
+        <p>Technologies I'm learning</p>
+
+    </div>
+
+    <div class="cards">
+
+
+        <div class="card">
+
+            <div class="card-icon">🐍</div>
+
+            <h3>Python</h3>
+
+            <p>
+                Python programming, fundamentals,
+                problem solving and basic data concepts.
+            </p>
+
+            <br>
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>Python</span>
+                    <span>80%</span>
+                </div>
+
+                <div class="progress">
+                    <span class="python"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">💻</div>
+
+            <h3>C (Basics)</h3>
+
+            <p>
+                Basic C programming, conditions,
+                loops, functions and problem solving.
+            </p>
+
+            <br>
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>C</span>
+                    <span>65%</span>
+                </div>
+
+                <div class="progress">
+                    <span class="c"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="card-icon">⚡</div>
+
+            <h3>C++ (Basics)</h3>
+
+            <p>
+                Basic C++ programming and introduction
+                to object-oriented programming.
+            </p>
+
+            <br>
+
+            <div class="skill">
+
+                <div class="skill-header">
+                    <span>C++</span>
+                    <span>70%</span>
+                </div>
+
+                <div class="progress">
+                    <span class="cpp"></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+    <div class="section-title">
+
+        <h2>
+            My <span>Certifications</span>
+        </h2>
+
+        <p>Courses and achievements</p>
+
+    </div>
+
+    <div class="cards">
+
+
+        <div class="card certificate">
+
+            <div class="card-icon">🐍</div>
+
+            <h3>
+                Basics of Python
+            </h3>
+
+            <p class="provider">
+                UniAthena
+            </p>
+
+            <p>
+                Certification covering the fundamentals
+                of Python programming.
+            </p>
+
+        </div>
+
+
+        <div class="card certificate">
+
+            <div class="card-icon">📊</div>
+
+            <h3>
+                Data Visualisation Using Python
+            </h3>
+
+            <p class="provider">
+                UniAthena
+            </p>
+
+            <p>
+                Certification focused on data visualisation
+                concepts using Python.
+            </p>
+
+        </div>
+
+
+        <div class="card certificate">
+
+            <div class="card-icon">🤖</div>
+
+            <h3>
+                Strategic Planning in AI Age
+            </h3>
+
+            <p class="provider">
+                HP Foundations
+            </p>
+
+            <p>
+                Certification focused on strategic planning
+                in the age of Artificial Intelligence.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- INTERESTS -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>
+            Interests &amp; <span>Activities</span>
+        </h2>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card interest-card">
+
+            <div class="card-icon">👩‍💻</div>
+
+            <h3>Programming</h3>
+
+            <p>
+                Learning programming and solving
+                coding problems.
+            </p>
+
+        </div>
+
+
+        <div class="card interest-card">
+
+            <div class="card-icon">🧩</div>
+
+            <h3>Debugging</h3>
+
+            <p>
+                Finding errors and understanding
+                how to solve them.
+            </p>
+
+        </div>
+
+
+        <div class="card interest-card">
+
+            <div class="card-icon">🎵</div>
+
+            <h3>Music</h3>
+
+            <p>
+                Listening to music during my free time.
+            </p>
+
+        </div>
+
+
+        <div class="card interest-card">
+
+            <div class="card-icon">🤝</div>
+
+            <h3>NSS</h3>
+
+            <p>
+                Interested in social service and
+                community activities.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CAREER GOAL -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>
+            My <span>Career Goal</span>
+        </h2>
+
+    </div>
+
+    <div class="card about-text">
+
+        <div class="card-icon">🚀</div>
+
+        <p>
+            My aim is to become a successful IT professional.
+            I want to develop strong programming and data
+            analytics skills and create useful solutions
+            using technology.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+    <div class="section-title">
+
+        <h2>
+            Get In <span>Touch</span>
+        </h2>
+
+        <p>Let's connect!</p>
+
+    </div>
+
+
+    <div class="contact-container">
+
+
+        <div class="contact-card">
+
+            <div class="icon">📧</div>
+
+            <h3>Email</h3>
+
+            <a href="mailto:karthikabalamurugan028@gmail.com">
+                karthikabalamurugan028@gmail.com
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">📱</div>
+
+            <h3>Phone</h3>
+
+            <a href="tel:+919629653645">
+                +91 9629654365
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">💻</div>
+
+            <h3>GitHub</h3>
+
+            <a href="https://github.com/karthikabalamurugan028-glitch" target="_blank">
+                GitHub Profile
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">🧩</div>
+
+            <h3>LeetCode</h3>
+
+            <a href="https://leetcode.com/" target="_blank">
+                LeetCode Profile
+            </a>
+
+        </div>
+
+
+        <div class="contact-card">
+
+            <div class="icon">🔗</div>
+
+            <h3>LinkedIn</h3>
+
+            <a href="http://127.0.0.1:5500/index.html#" target="_blank">
+                LinkedIn Profile
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 Karthika Balamurugan
+    </p>
+
+    <p>
+        B.Sc. Computer Science with Data Analytics
+    </p>
+
+    <p>
+        Designed with 💜 &amp; Technology
+    </p>
+
+</footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
